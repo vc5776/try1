@@ -1,0 +1,23 @@
+<input type="text" id="hz" value="Homzzang.com">
+
+
+
+<button onclick="homzzang()">클릭</button>
+
+
+
+<p id="demo"></p>
+
+
+
+<script>
+
+function homzzang() {
+
+  var x = document.getElementById("hz").value;
+
+  document.getElementById("demo").innerHTML = x;
+
+}
+
+</script> 
