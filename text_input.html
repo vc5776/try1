@@ -1,10 +1,8 @@
 <input type="text" id="hz" value="Homzzang.com">
 
-
+<p>Please try to the input text this "happy" or "Not happy"</p>
 
 <button onclick="homzzang()">클릭</button>
-
-
 
 <p id="demo"></p>
 
@@ -14,7 +12,17 @@
 
 function homzzang() {
 
-  var x = document.getElementById("hz").value;
+  var x = document.getElementById("hz").value;\
+  
+  if (x == "happy") {
+    document.getElementById("demo").innerHTML = You a nice;
+  }
+  else if (x == "Not happy"){
+    document.getElementById("demo").innerHTML = oh no......;
+  }
+  else {
+    document.getElementById("demo").innerHTML = You can try to corrent text.;
+  }
 
   document.getElementById("demo").innerHTML = x;
 
