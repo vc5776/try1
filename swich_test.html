@@ -1,0 +1,41 @@
+<head>
+  
+  <style>
+    p{
+     color : red; 
+    }
+  
+  </style>
+
+</head>
+
+<body>
+
+<input type="text" id="nb" value="Homzzang.com">
+
+<p>The number I think is the most meaningless. 4 digit investigator. contatin to also the 0. first digit number is 0.</p>
+
+<button onclick="match_the_number()">click</button>
+
+<p id="num"></p>
+
+<script>
+
+function match_the_number() {
+
+var number = document.getElementById("nb").value;
+
+var birthday = 0729;
+
+switch (number) {
+
+case 0729:
+document.getElementById("num").inner="This is my birthday";
+
+default:
+document.getElementById("num").inner="oh.......";
+}
+
+</script>
+  
+</body>
