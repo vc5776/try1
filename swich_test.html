@@ -17,25 +17,20 @@
 
 <button onclick="match_the_number()">click</button>
 
-<p id="num"></p>
+<p id="num">output</p>
 
 <script>
 
 function match_the_number() {
-
-var number = document.getElementById("nb").value;
-
-var birthday = 0729;
-
-switch (number) {
-
-case "0729":
-    document.getElementById("num").innerHTML="This is my birthday";
-    break;
-
-default:    
-    document.getElementById("num").innerHTML="oh.......";
-    break;
+  var number = document.getElementById("nb").value;
+  var birthday = 0729;
+  switch (number) {
+    case "0729":
+      document.getElementById("num").innerHTML="This is my birthday";
+    default:    
+      document.getElementById("num").innerHTML="oh.......";
+      break;
+  }
 }
 
 </script>
