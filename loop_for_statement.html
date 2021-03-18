@@ -1,0 +1,37 @@
+<!DOCTYE html>
+<head>
+  <style>
+    .color1{
+      color:blue;
+    }
+    p{
+      test:borden;
+      color:blue;
+  </style>
+</head>
+
+<body>
+  <input type="number" id="input" value="count number">
+  
+  <button onclick = "loop">click</button>
+  
+  <p id = "number"></p>
+  
+  <p id = "sum"></p>
+  
+
+  <script>
+    function loop(){
+      var n = document.getElementById("input").value;
+      
+      var sum = 0;
+      
+      for (i = 0; i < n ; i++){
+        sum = sum + i;
+        document.getElementById("number").inner=i;
+      }
+      document.getElementById("sum1").inner=sum;
+    }
+  </script>
+
+</body>
