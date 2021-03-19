@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
 <body>
+<input type = number value = "number">
 
-<h2>JavaScript For Loop</h2>
+<h2>for loop</h2>
 
 <p id="demo"></p>
 
+<p id="np"></p>
+  
 <script>
-var text = "";
-var i;
-for (i = 0; i < 5; i++) {
-  text += "The number is " + i + "<br>";
+function numberinput() {
+  n = document.getElementById("np").value;
+  var text = "";
+  var i;
+  for (i = 0; i < n; i++) {
+    text += "The number is " + i + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
 }
-document.getElementById("demo").innerHTML = text;
 </script>
 
 </body>
