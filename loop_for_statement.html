@@ -15,8 +15,6 @@
   
   <button onclick = "loop">click</button>
   
-  <p id = "number"></p>
-  
   <p id = "sum1"></p>
   
 
@@ -26,11 +24,12 @@
       
       var sum = 0;
       
+      var i;
+      
       for (i = 0; i < 8 ; i++){
         sum = sum + i;
-        document.getElementById("number").innerHTML=i;
       }
-      document.getElementById("sum1").innerHTML=sum;
+      document.getElementById("sum1").innerHTML=sum + <br>;
     }
   </script>
 
